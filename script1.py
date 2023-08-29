@@ -2,15 +2,15 @@
 # Correc the mistakes and produce the following output:
 # Johnny, the total of your purchase is $1,688.70
 
-def calcTotal(amt,tax,name):
-    mytotal = amt * (1+tax)
-    print(f"{myname}, the total of your purchase is ${total:,.2f}")
+def calcTotal(amt,tax,myname,constant):
+    mytotal = amt * (constant+tax)
+    print(f"{myname}, the total of your purchase is ${mytotal:,.2f}")
 
 myname = 'Johnny'
-price = 1,560
-thetax = 8.25%
-
-calcTotal(thetax,price,name)
+amt = 1560
+tax = 0.0825
+constant = 1
+calcTotal(amt,tax,myname,constant)
 
 
 
@@ -21,7 +21,8 @@ calcTotal(thetax,price,name)
 list1 = [1,'two',3.2,'four',5]
 
 for i in list1:
-    print(i)
+    if type(i) is int:
+        print(i)
 
 
 
